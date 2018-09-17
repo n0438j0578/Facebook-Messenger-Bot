@@ -251,9 +251,7 @@ function receivedMessage(event) {
   }
 
   if (messageText) {
-        url = "  mongodb://<test>:<joenut1234>@ds046677.mlab.com:46677/chatbot";
-      
-
+        url = "mongodb://<test>:<joenut1234>@ds046677.mlab.com:46677/chatbot";
         mongo.MongoClient.connect(url, function(err, db) {
           if (err) throw err;
           console.log("Database created!");
@@ -341,7 +339,7 @@ function receivedMessage(event) {
          /* break;
           }); */
         //sendTextMessage(senderID, "สวัสดีครับ นักเดินเล่นผู้หลงทางในcstu");
-        break;
+          break;
 
 
       default:
