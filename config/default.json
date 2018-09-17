@@ -2,5 +2,5 @@
     "appSecret": "0345821f8a33338a9ea81f0a37bd53a2",
     "pageAccessToken": "EAAaiQ7zxeusBAERiXFly70PAKGCbQaw3MXmskZCoxFuXp54VU3CqsSrMZBVZALl6pz2IQKNtEDhlXSkCZCCLzsfgWZCgOvjW3TZA31nqcqmoQr3JCv3SiOfjp0fbJOyLT63kZCvI4TcXlSp8RZBmU3zSc9d27bwWbyFC0UFtwh8xMQZDZD",
     "validationToken": "test",
-    "serverURL": "https://messengerbottest.herokuapp.com/"
+    "serverURL": "https://njmessengerbot.herokuapp.com/"
 }
