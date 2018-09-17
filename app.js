@@ -261,7 +261,8 @@ function receivedMessage(event) {
     
       var test = "แงงง";
     request(options).then(function (response) {
-        test = response.Status;
+        a =  JSON.parse(response);
+        test = a.Status;
       }).catch(function (err) {
         test = "แงงงซวยยย";
       })
@@ -350,7 +351,7 @@ function receivedMessage(event) {
           if (err) throw err;
           console.log("Database created!");
           db.close(); */
-          sendTextMessage(senderID, url);
+          sendTextMessage(senderID, test);
          /* break;
           }); */
         //sendTextMessage(senderID, "สวัสดีครับ นักเดินเล่นผู้หลงทางในcstu");
