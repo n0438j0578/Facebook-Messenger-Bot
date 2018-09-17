@@ -252,7 +252,8 @@ function receivedMessage(event) {
 
   if (messageText) {
         var url = "mongodb://<test>:<joenut1234>@ds046677.mlab.com:46677/chatbot";
-        mongo.MongoClient.connect(url, function(err, db) {
+
+        MongoClient.connect(url, function(err, db) {
           if (err) throw err;
           console.log("Database created!");
           sendTextMessage(senderID, "ต่อเข้าชิมิ");
@@ -335,7 +336,7 @@ function receivedMessage(event) {
           if (err) throw err;
           console.log("Database created!");
           db.close(); */
-          sendTextMessage(senderID, "สวัสดีครับ นักเดินเล่นผู้หลงทางในcstu นายเหนื่อยไหมยังต่อไม่ได้เนี้ย");
+          sendTextMessage(senderID, url);
          /* break;
           }); */
         //sendTextMessage(senderID, "สวัสดีครับ นักเดินเล่นผู้หลงทางในcstu");
