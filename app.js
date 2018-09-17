@@ -11,7 +11,6 @@
 'use strict';
 
 const 
-  mongo = require('mongodb'); 
   bodyParser = require('body-parser'),
   config = require('config'),
   crypto = require('crypto'),
