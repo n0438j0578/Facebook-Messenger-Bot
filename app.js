@@ -261,10 +261,10 @@ function receivedMessage(event) {
     
       var test = "แงงง";
     request(options).then(function (response) {
-        a =  JSON.parse(response);
-        test = a.Status;
+        // a =  JSON.parse(response);
+        // test = a.Status;
       }).catch(function (err) {
-        test = "แงงงซวยยย";
+        // test = "แงงงซวยยย";
       })
         //var url = "mongodb://<test>:<joenut1234>@ds046677.mlab.com:46677/chatbot";
 
