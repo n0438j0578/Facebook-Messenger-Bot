@@ -260,11 +260,9 @@ function receivedMessage(event) {
     }
     
       var test = "แงงง";
-    request(options)
-      .then(function (response) {
+    request(options).then(function (response) {
         test = response.Status;
-      })
-      .catch(function (err) {
+      }).catch(function (err) {
         test = "แงงงซวยยย";
       })
         //var url = "mongodb://<test>:<joenut1234>@ds046677.mlab.com:46677/chatbot";
