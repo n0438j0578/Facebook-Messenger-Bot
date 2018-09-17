@@ -251,7 +251,7 @@ function receivedMessage(event) {
   }
 
   if (messageText) {
-        var url = "mongodb://<test>:<joenut1234>@ds046677.mlab.com:46677/chatbot";
+        //var url = "mongodb://<test>:<joenut1234>@ds046677.mlab.com:46677/chatbot";
 
         // MongoClient.connect(url, function(err, db) {
         //   if (err) throw err;
