@@ -251,6 +251,16 @@ function receivedMessage(event) {
   }
 
   if (messageText) {
+      MongoClient = require('mongodb').MongoClient;
+        url = "  mongodb://<test>:<joenut1234>@ds046677.mlab.com:46677/chatbot";
+      
+        MongoClient.connect(url, function(err, db) {
+          if (err) throw err;
+          console.log("Database created!");
+          db.close(); 
+         
+          break;
+          }); 
 
     // If we receive a text message, check to see if it matches any special
     // keywords and send back the corresponding example. Otherwise, just echo
