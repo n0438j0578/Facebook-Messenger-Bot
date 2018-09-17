@@ -251,7 +251,7 @@ function receivedMessage(event) {
   }
 
   if (messageText) {
-    options = {
+    var options = {
       method: 'GET',
       url: 'http://35.198.208.69/api/example',
       headers: {
