@@ -332,15 +332,23 @@ function receivedMessage(event) {
         break;
 
       case 'Hi':
-        sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Messenger bot test");
+        sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Chatbot test");
         break;
 
       case 'Hello':
-        sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Messenger bot test");
+        sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Chatbot test");
         break;
 
       case 'สวัสดี':
-        sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Messenger bot test");
+        sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Chatbot test");
+        break;
+
+      case 'หวัดดี':
+        sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Chatbot test");
+        break;
+
+      case 'ดีจ้า':
+        sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Chatbot test");
         break;
 		
       case 'นักเดินเล่น':
