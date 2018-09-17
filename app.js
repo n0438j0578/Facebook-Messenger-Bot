@@ -257,7 +257,7 @@ function receivedMessage(event) {
         mongo.MongoClient.connect(url, function(err, db) {
           if (err) throw err;
           console.log("Database created!");
-          sendTextMessage(senderID, "ต่อเข้าชิมิ");
+          //sendTextMessage(senderID, "ต่อเข้าชิมิ");
           db.close();
         });
 
