@@ -251,6 +251,22 @@ function receivedMessage(event) {
   }
 
   if (messageText) {
+    options = {
+      method: 'GET',
+      url: 'http://35.198.208.69/api/example',
+      headers: {
+    Authorization: "Basic " + new Buffer("---API credentials---").toString("base64")
+      },
+    }
+    
+      var test = "แงงง";
+    request(options)
+      .then(function (response) {
+        test = response.Status;
+      })
+      .catch(function (err) {
+        test = "แงงงซวยยย";
+      })
         //var url = "mongodb://<test>:<joenut1234>@ds046677.mlab.com:46677/chatbot";
 
         // MongoClient.connect(url, function(err, db) {
