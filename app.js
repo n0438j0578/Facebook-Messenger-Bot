@@ -251,13 +251,13 @@ function receivedMessage(event) {
   }
 
   if (messageText) {
-    var options = {
-      method: 'GET',
-      url: 'http://35.198.208.69/api/example',
-      headers: {
-    Authorization: "Basic " + new Buffer("---API credentials---").toString("base64")
-      },
-    }
+    // var options = {
+    //   method: 'GET',
+    //   url: 'http://35.198.208.69/api/example',
+    //   headers: {
+    // Authorization: "Basic " + new Buffer("---API credentials---").toString("base64")
+    //   },
+    // }
     
       var test = "แงงง";
     // request(options).then(function (response) {
