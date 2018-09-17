@@ -312,7 +312,7 @@ function receivedMessage(event) {
         break;
 
       case 'Hello':
-        sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Messenger bot test");
+        sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Messenger bot testsssss");
         break;
 
       case 'สวัสดี':
