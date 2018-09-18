@@ -15,6 +15,7 @@
   "author": "Facebook",
   "license": "ISC",
   "dependencies": {
+    "Math": "0.0.1-security",
     "biguint-format": "^1.0.0",
     "body-parser": "^1.15.0",
     "config": "^1.20.4",
