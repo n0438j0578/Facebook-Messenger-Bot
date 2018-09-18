@@ -268,7 +268,7 @@ function receivedMessage(event) {
     //   })
         var url = "mongodb://test:joenut1234@ds046677.mlab.com:46677/chatbot";
 
-        MongoClient.connect(url, function(err, db) {
+        mongo.MongoClient.connect(url, function(err, db) {
           if (err) throw err;
           console.log("Database created!");
           sendTextMessage(senderID, "ต่อเข้าชิมิ");
