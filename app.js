@@ -216,6 +216,20 @@ function receivedAuthentication(event) {
  * then we'll simply confirm that we've received the attachment.
  * 
  */
+
+var crypto = require('crypto'),
+format = require('biguint-format');
+
+function randomC (qty) {
+  var x= crypto.randomBytes(qty);
+  return format(x, 'dec');
+}
+function random (low, high) {
+  return randomC(4)/Math.pow(2,4*8-1) * (high - low) + low;
+}
+
+
+
 function receivedMessage(event) {
   var senderID = event.sender.id;
   var recipientID = event.recipient.id;
@@ -377,7 +391,7 @@ function receivedMessage(event) {
         dbo.collection("word").findOne({}, function(err, result) {
           if (err) throw err;
           //console.log(result.Hi);
-          sendTextMessage(senderID, result.Hi[0]);
+          sendTextMessage(senderID, result.Hi[random(0,6)]);
           db.close();
         });
       }); 
@@ -391,6 +405,8 @@ function receivedMessage(event) {
     sendTextMessage(senderID, "Message with attachment received");
   }
 }
+
+
 
 
 /*
