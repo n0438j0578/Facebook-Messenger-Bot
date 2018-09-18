@@ -266,14 +266,7 @@ function receivedMessage(event) {
     //   }).catch(function (err) {
     //     // test = "แงงงซวยยย";
     //   })
-        var url = "mongodb://test:joenut1234@ds046677.mlab.com:46677/chatbot";
 
-        mongo.MongoClient.connect(url, function(err, db) {
-          if (err) throw err;
-          console.log("Database created!");
-          sendTextMessage(senderID, "ต่อเข้าชิมิ");
-          db.close();
-        });
 
     // If we receive a text message, check to see if it matches any special
     // keywords and send back the corresponding example. Otherwise, just echo
@@ -355,22 +348,6 @@ function receivedMessage(event) {
         break;
 		
       case 'นักเดินเล่น':
-<<<<<<< HEAD
-          sendTextMessage(senderID, test);
-          break;
-        case 'ต่อข้อมูล':
-	        var url = "mongodb://test:joenut1234@ds046677.mlab.com:46677";
-
-          mongo.MongoClient.connect(url, function(err, db) {
-            if (err) throw err;
-            var dbo = db.db("chatbot");
-            dbo.collection("Word").findOne({}, function(err, result) {
-              if (err) throw err;
-              sendTextMessage(senderID,result.Hi);
-              db.close();
-            });
-          });
-=======
        /* MongoClient = require('mongodb').MongoClient;
         url = "  mongodb://<test>:<joenut1234>@ds046677.mlab.com:46677/chatbot";
       
@@ -382,7 +359,17 @@ function receivedMessage(event) {
          /* break;
           }); */
         //sendTextMessage(senderID, "สวัสดีครับ นักเดินเล่นผู้หลงทางในcstu");
->>>>>>> parent of eefeb74... ลองต่ออีกครั้ง
+          break;
+
+      case 'ต่อ':
+      var url = "mongodb://test:joenut1234@ds046677.mlab.com:46677/chatbot";
+
+      mongo.MongoClient.connect(url, function(err, db) {
+        if (err) throw err;
+        console.log("Database created!");
+        sendTextMessage(senderID, "ต่อเข้าชิมิ");
+        db.close();
+      });
           break;
 
 
