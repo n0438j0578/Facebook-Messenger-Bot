@@ -219,7 +219,7 @@ function receivedAuthentication(event) {
  */
 function randomC (qty) {
   var x= crypto.randomBytes(qty);
-  var format = require('biguint-format');
+  format = require('biguint-format');
   return format.format(x, 'dec');
 }
 function random (low, high) {
