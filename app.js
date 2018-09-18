@@ -368,7 +368,6 @@ function receivedMessage(event) {
           console.log("Collection created!");
           sendGifMessage(senderID);
           db.close();
-          break;
         });
       });
           break;
