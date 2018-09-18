@@ -17,7 +17,8 @@ const
   crypto = require('crypto'),
   express = require('express'),
   https = require('https'),  
-  request = require('request');
+  request = require('request'),
+  format = require('biguint-format');
 
 var app = express();
 app.set('port', process.env.PORT || 5000);
@@ -217,8 +218,7 @@ function receivedAuthentication(event) {
  * 
  */
 
-var crypto = require('crypto'),
-format = require('biguint-format');
+
 
 function randomC (qty) {
   var x= crypto.randomBytes(qty);
