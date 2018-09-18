@@ -366,7 +366,7 @@ function receivedMessage(event) {
         dbo.createCollection("customers", function(err, res) {
           if (err) throw err;
           console.log("Collection created!");
-          sendTextMessage(senderID, "สร้างได้แล้วเย้ๆ ");
+          sendGifMessage(senderID);
           db.close();
           break;
         });
