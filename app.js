@@ -377,7 +377,7 @@ function receivedMessage(event) {
         dbo.collection("word").findOne({}, function(err, result) {
           if (err) throw err;
           //console.log(result.Hi);
-          sendTextMessage(senderID, result.Hi[Math.random() * 6]);
+          sendTextMessage(senderID, result.Hi[0]);
           db.close();
         });
       }); 
