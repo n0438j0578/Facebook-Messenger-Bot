@@ -360,16 +360,27 @@ function receivedMessage(event) {
       //   sendTextMessage(senderID, "ต่อเข้าชิมิ");
       //   db.close();
       // });
-      mongo.MongoClient.connect(url, function(err, db) {
+      // mongo.MongoClient.connect(url, function(err, db) {
+      //   if (err) throw err;
+      //   var dbo = db.db("chatbot");
+      //   dbo.createCollection("test", function(err, res) {
+      //     if (err) throw err;
+      //     console.log("Collection created!");
+      //     sendGifMessage(senderID);
+      //     db.close();
+      //   });
+      // });
+
+      MongoClient.connect(url, function(err, db) {
         if (err) throw err;
         var dbo = db.db("chatbot");
-        dbo.createCollection("test", function(err, res) {
+        dbo.collection("Word").findOne({}, function(err, result) {
           if (err) throw err;
-          console.log("Collection created!");
-          sendGifMessage(senderID);
+          //console.log(result.Hi);
+          sendTextMessage(senderID, result.Hi);
           db.close();
         });
-      });
+      }); 
           break;
 
 
