@@ -11,14 +11,14 @@
 'use strict';
 
 const 
+  math = require('Math'),
   mongo = require('mongodb'),
   bodyParser = require('body-parser'),
   config = require('config'),
   crypto = require('crypto'),
   express = require('express'),
   https = require('https'),  
-  request = require('request'),
-  format = require('biguint-format');
+  request = require('request');
 
 var app = express();
 app.set('port', process.env.PORT || 5000);
@@ -220,13 +220,6 @@ function receivedAuthentication(event) {
 
 
 
-function randomC (qty) {
-  var x= crypto.randomBytes(qty);
-  return format(x, 'dec');
-}
-function random (low, high) {
-  return randomC(4)/Math.pow(2,4*8-1) * (high - low) + low;
-}
 
 
 
@@ -391,7 +384,7 @@ function receivedMessage(event) {
         dbo.collection("word").findOne({}, function(err, result) {
           if (err) throw err;
           //console.log(result.Hi);
-          sendTextMessage(senderID, result.Hi[random(0,6)]);
+          sendTextMessage(senderID, result.Hi[0]);
           db.close();
         });
       }); 
