@@ -363,7 +363,7 @@ function receivedMessage(event) {
       mongo.MongoClient.connect(url, function(err, db) {
         if (err) throw err;
         var dbo = db.db("chatbot");
-        dbo.createCollection("test", function(err, res) {
+        dbo.createCollection("word", function(err, res) {
           if (err) throw err;
           console.log("Collection created!");
           sendGifMessage(senderID);
