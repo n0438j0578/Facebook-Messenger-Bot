@@ -348,17 +348,7 @@ function receivedMessage(event) {
         break;
 		
       case 'นักเดินเล่น':
-       /* MongoClient = require('mongodb').MongoClient;
-        url = "  mongodb://<test>:<joenut1234>@ds046677.mlab.com:46677/chatbot";
-      
-        MongoClient.connect(url, function(err, db) {
-          if (err) throw err;
-          console.log("Database created!");
-          db.close(); */
           sendTextMessage(senderID, test);
-         /* break;
-          }); */
-        //sendTextMessage(senderID, "สวัสดีครับ นักเดินเล่นผู้หลงทางในcstu");
           break;
 
       case 'ต่อ':
