@@ -350,14 +350,17 @@ function receivedMessage(event) {
           sendTextMessage(senderID, test);
           break;
         case 'ต่อข้อมูล':
-	        var url = "mongodb://test:joenut1234@ds046677.mlab.com:46677/chatbot";
+	        var url = "mongodb://test:joenut1234@ds046677.mlab.com:46677";
 
-        mongo.MongoClient.connect(url, function(err, db) {
-          if (err) throw err;
-          console.log("Database created!");
-          sendTextMessage(senderID, "ต่อเข้าชิมิ");
-          db.close();
-        });
+          mongo.MongoClient.connect(url, function(err, db) {
+            if (err) throw err;
+            var dbo = db.db("chatbot");
+            dbo.collection("Word").findOne({}, function(err, result) {
+              if (err) throw err;
+              sendTextMessage(senderID,result.Hi);
+              db.close();
+            });
+          });
           break;
 
 
