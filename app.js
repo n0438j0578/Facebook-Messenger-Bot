@@ -367,6 +367,7 @@ function receivedMessage(event) {
           if (err) throw err;
           console.log("Collection created!");
           db.close();
+          break;
         });
       });
           break;
