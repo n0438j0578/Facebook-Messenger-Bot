@@ -342,6 +342,9 @@ function receivedMessage(event) {
       case 'สวัสดี':
         sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Messenger bot test");
         break;
+      case 'cstu':
+        sendTextMessage(senderID, "วิทยาการคอมพิวเตอร์ที่เก่งที่สุดในประเทศไทย");
+        break;
 		
       case 'นักเดินเล่น':
        /* MongoClient = require('mongodb').MongoClient;
