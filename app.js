@@ -371,7 +371,7 @@ function receivedMessage(event) {
       //   });
       // });
 
-      MongoClient.connect(url, function(err, db) {
+      mongo.MongoClient.connect(url, function(err, db) {
         if (err) throw err;
         var dbo = db.db("chatbot");
         dbo.collection("Word").findOne({}, function(err, result) {
