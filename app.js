@@ -19,7 +19,7 @@ const
   https = require('https'),  
   request = require('request'),
   math = require('Math'),
-  format = require('biguint-format');
+  forma = require('biguint-format');
 
 var app = express();
 app.set('port', process.env.PORT || 5000);
@@ -220,7 +220,7 @@ function receivedAuthentication(event) {
  */
 function randomC (qty) {
   var x= crypto.randomBytes(qty);
-  return format(x, 'dec');
+  return forma.format(x, 'dec');
 }
 function random (low, high) {
   return randomC(4)/math.Math.pow(2,4*8-1) * (high - low) + low;
