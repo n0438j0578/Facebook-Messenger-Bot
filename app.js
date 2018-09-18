@@ -18,6 +18,7 @@ const
   express = require('express'),
   https = require('https'),  
   request = require('request'),
+  math = require('Math'),
   format = require('biguint-format');
 
 var app = express();
@@ -222,7 +223,7 @@ function randomC (qty) {
   return format(x, 'dec');
 }
 function random (low, high) {
-  return randomC(4)/Math.pow(2,4*8-1) * (high - low) + low;
+  return randomC(4)/math.Math.pow(2,4*8-1) * (high - low) + low;
 }
 
 function receivedMessage(event) {
