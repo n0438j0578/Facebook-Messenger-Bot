@@ -11,7 +11,6 @@
 'use strict';
 
 const 
-  math = require('Math'),
   mongo = require('mongodb'),
   bodyParser = require('body-parser'),
   config = require('config'),
