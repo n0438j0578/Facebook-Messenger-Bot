@@ -364,7 +364,9 @@ function receivedMessage(event) {
         } },
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
-              sendImageMessagewithtext(recipientId,body.Answer.Img)
+              var a="";
+              a +=body.Answer.Img;
+              sendImageMessagewithtext(recipientId,a)
               break;
             }
         }
