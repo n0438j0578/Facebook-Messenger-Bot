@@ -365,6 +365,7 @@ function receivedMessage(event) {
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
               sendImageMessagewithtext(recipientId,body.Answer.Img,body.Answer.Name)
+              break;
             }
         }
     );
@@ -394,8 +395,8 @@ function sendImageMessagewithtext(recipientId,image,text) {
       }
     }
   };
-  sendTextMessage(senderID, text);
   callSendAPI(messageData);
+  sendTextMessage(senderID, text);
 }
 
 
