@@ -364,6 +364,7 @@ function receivedMessage(event) {
         } },
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
+              sendTextMessage(senderID, "มีของจ้ามาดูได้เลย");
               var a="";
               a +=body.Answer.Img;
               sendImageMessagewithtext(senderID,a)
