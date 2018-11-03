@@ -252,21 +252,10 @@ function receivedMessage(event) {
   }
 
   if (messageText) {
-    // var options = {
-    //   method: 'GET',
-    //   url: 'http://35.198.208.69/api/example',
-    //   headers: {
-    // Authorization: "Basic " + new Buffer("---API credentials---").toString("base64")
-    //   },
-    // }
+
     
       var test = "แงงง";
-    // request(options).then(function (response) {
-    //     // a =  JSON.parse(response);
-    //     // test = a.Status;
-    //   }).catch(function (err) {
-    //     // test = "แงงงซวยยย";
-    //   })
+
 
 
     // If we receive a text message, check to see if it matches any special
@@ -355,29 +344,11 @@ function receivedMessage(event) {
       case 'ต่อ':
       var url = "mongodb://test:joenut1234@ds046677.mlab.com:46677/chatbot";
 
-      // mongo.MongoClient.connect(url, function(err, db) {
-      //   if (err) throw err;
-      //   console.log("Database created!");
-      //   sendTextMessage(senderID, "ต่อเข้าชิมิ");
-      //   db.close();
-      // });
-      // mongo.MongoClient.connect(url, function(err, db) {
-      //   if (err) throw err;
-      //   var dbo = db.db("chatbot");
-      //   dbo.createCollection("word", function(err, res) {
-      //     if (err) throw err;
-      //     console.log("Collection created!");
-      //     sendGifMessage(senderID);
-      //     db.close();
-      //   });
-      // });
-
       mongo.MongoClient.connect(url, function(err, db) {
         if (err) throw err;
         var dbo = db.db("chatbot");
         dbo.collection("word").findOne({}, function(err, result) {
           if (err) throw err;
-          //console.log(result.Hi);
           sendTextMessage(senderID, result.Hi[0]);
           db.close();
         });
