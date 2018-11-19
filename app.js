@@ -367,7 +367,7 @@ function receivedMessage(event) {
         case 'อยากได้เร้าเตอร์ที่รองรับระยะไกลๆ และมี 2.4 กับ 5 ครับ':
         var messageData = {
           recipient: {
-            id: recipientId
+            id: senderID
           },
           message: {
             attachment: {
