@@ -417,6 +417,10 @@ function sendManyProduct(recipientId) {
               type: "web_url",
               url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",
               title: "เปิดหน้าเว็บสินค้า"
+            }, {
+              type: "postback",
+              title: "Call Postback",
+              payload: "Payload for second bubble",
             }],
           }, {
             title: "D-Link COVR-3902",
@@ -427,6 +431,10 @@ function sendManyProduct(recipientId) {
               type: "web_url",
               url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",
               title: "เปิดหน้าเว็บสินค้า"
+            }, {
+              type: "postback",
+              title: "Call Postback",
+              payload: "Payload for second bubble",
             }]
           }]
         }
