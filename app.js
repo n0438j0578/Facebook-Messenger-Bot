@@ -456,8 +456,8 @@ function sendManyProduct(recipientId) {
           elements: [{
             title: "ASUS Dual-band Wireless",
             subtitle: "ASUS RT-AC1200G+ is Router/Access Point that use AC",
-            item_url: "https://www.oculus.com/en-us/rift/",               
-            image_url: SERVER_URL + "/assets/rift.png",
+            item_url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",               
+            image_url: "http://35.220.204.174/WebProject/img/ASUS%20Dual-band%20Wireless-AC1200%20router%20RT-AC1200G+.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.oculus.com/en-us/rift/",
