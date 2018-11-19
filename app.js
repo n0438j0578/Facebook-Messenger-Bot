@@ -399,51 +399,6 @@ function receivedMessage(event) {
 
 
 function sendManyProduct(recipientId) {
-  // var messageData = {
-  //   recipient: {
-  //     id: recipientId
-  //   },
-  //   message: {
-  //     attachment: {
-  //       type: "template",
-  //       payload: {
-  //         template_type: "generic",
-  //         elements: [{
-  //           title: "ASUS Dual-band Wireless-AC1200 router RT-AC1200G+",
-  //           subtitle: "ASUS RT-AC1200G+ is Router/Access Point that use AC technology or 5Ghz 1167 Mbps, Gigabit one WAN interface,  and four 100/1000 Mbps LAN interface, four 5 dBi antenna (unremovable) support Wireless AC at 300 Mbps on 2.4GHz and 867 Mbps  on 5GHz, with Wireless Router mode and Access Point mode.",
-  //           item_url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",               
-  //           image_url: "http://35.220.204.174/WebProject/img/ASUS%20Dual-band%20Wireless-AC1200%20router%20RT-AC1200G+.jpg",
-  //           buttons: [{
-  //             type: "web_url",
-  //             url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",
-  //             title: "เปิดหน้าเว็บสินค้า"
-  //           }, {
-  //             type: "postback",
-  //             title: "Call Postback",
-  //             payload: "Payload for first bubble",
-  //           }],
-  //         }, {
-  //           title: "D-Link COVR-3902 AC3900 COVR Wi-Fi System",
-  //           subtitle: "High Performance : AC3900 Wi-Fi System provides stronger and faster Wi-Fi for 4K streaming and gaming on multiple devices, this router can use 2.4Ghz and 5Ghz",
-  //           item_url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",               
-  //           image_url: "http://35.220.204.174/WebProject/img/D-Link%20COVR-3902%20AC3900%20COVR%20Wi-Fi%20System.jpg",
-  //           buttons: [{
-  //             type: "web_url",
-  //             url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",
-  //             title: "เปิดหน้าเว็บสินค้า"
-  //           }, {
-  //             type: "postback",
-  //             title: "Call Postback",
-  //             payload: "Payload for second bubble",
-  //           }]
-  //         }]
-  //       }
-  //     }
-  //   }
-  // };  
-
-  // callSendAPI(messageData);
-
   var messageData = {
     recipient: {
       id: recipientId
@@ -454,28 +409,28 @@ function sendManyProduct(recipientId) {
         payload: {
           template_type: "generic",
           elements: [{
-            title: "ASUS Dual-band Wireless",
-            subtitle: "ASUS RT-AC1200G+ is Router/Access Point that use AC",
+            title: "ASUS Dual-band Wireless-AC1200 router RT-AC1200G+",
+            subtitle: "This router is support 2.45Ghz and 5Ghz (dual band)",
             item_url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",               
             image_url: "http://35.220.204.174/WebProject/img/ASUS%20Dual-band%20Wireless-AC1200%20router%20RT-AC1200G+.jpg",
             buttons: [{
               type: "web_url",
-              url: "https://www.oculus.com/en-us/rift/",
-              title: "Open Web URL"
+              url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",
+              title: "เปิดหน้าเว็บสินค้า"
             }, {
               type: "postback",
               title: "Call Postback",
               payload: "Payload for first bubble",
             }],
           }, {
-            title: "touch",
-            subtitle: "Your Hands, Now in VR",
-            item_url: "https://www.oculus.com/en-us/touch/",               
-            image_url: SERVER_URL + "/assets/touch.png",
+            title: "D-Link COVR-3902 AC3900 COVR Wi-Fi System",
+            subtitle: "This router is support 2.4Ghz and 5Ghz (dual band)",
+            item_url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",               
+            image_url: "http://35.220.204.174/WebProject/img/D-Link%20COVR-3902%20AC3900%20COVR%20Wi-Fi%20System.jpg",
             buttons: [{
               type: "web_url",
-              url: "https://www.oculus.com/en-us/touch/",
-              title: "Open Web URL"
+              url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",
+              title: "เปิดหน้าเว็บสินค้า"
             }, {
               type: "postback",
               title: "Call Postback",
