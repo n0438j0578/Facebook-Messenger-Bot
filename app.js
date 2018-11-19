@@ -415,7 +415,8 @@ function sendManyProduct(recipientId) {
             image_url: "http://35.220.204.174/WebProject/img/ASUS%20Dual-band%20Wireless-AC1200%20router%20RT-AC1200G+.jpg",
             buttons: [{
               type: "web_url",
-              url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",
+              // url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",
+              url: "https://www.oculus.com/en-us/rift/",
               title: "เปิดหน้าเว็บสินค้า"
             }, {
               type: "postback",
@@ -429,7 +430,8 @@ function sendManyProduct(recipientId) {
             image_url: "http://35.220.204.174/WebProject/img/D-Link%20COVR-3902%20AC3900%20COVR%20Wi-Fi%20System.jpg",
             buttons: [{
               type: "web_url",
-              url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",
+              // url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",
+              url: "https://www.oculus.com/en-us/rift/",
               title: "เปิดหน้าเว็บสินค้า"
             }, {
               type: "postback",
