@@ -360,6 +360,10 @@ function receivedMessage(event) {
       // }); 
       //     break;
 
+      case 'ASUS Dual-band Wireless-AC1200 router RT-AC1200G+ เหลือไหม':
+      sendTextMessage(senderID, "เหลืออยู่ 10 ชิ้นครับ");
+        break;
+
 
       default:
       request.post(
