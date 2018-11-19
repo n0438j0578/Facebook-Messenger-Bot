@@ -364,6 +364,10 @@ function receivedMessage(event) {
       sendTextMessage(senderID, "เหลืออยู่ 10 ชิ้นครับ");
         break;
 
+      case 'เปลี่ยนป๊ะ':
+      sendTextMessage(senderID, "เปลี่ยนแล้ว");
+        break;
+
       case 'อยากได้เร้าเตอร์ที่รองรับระยะไกลๆ และมี 2.4 กับ 5 ครับ':
       sendManyProduct(senderID);
         break;
