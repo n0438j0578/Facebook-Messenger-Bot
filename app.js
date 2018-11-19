@@ -416,7 +416,7 @@ function sendManyProduct(recipientId){
             buttons: [{
               type: "web_url",
               url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",
-              title: "เปิดหน้าเว็บสินค้า"
+              title: "Open Website"
             }, {
               type: "postback",
               title: "Call Postback",
@@ -430,7 +430,7 @@ function sendManyProduct(recipientId){
             buttons: [{
               type: "web_url",
               url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",
-              title: "เปิดหน้าเว็บสินค้า"
+              title: "Open Website"
             }, {
               type: "postback",
               title: "Call Postback",
