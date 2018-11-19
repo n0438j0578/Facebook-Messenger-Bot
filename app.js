@@ -410,7 +410,7 @@ function sendManyProduct(recipientId) {
           template_type: "generic",
           elements: [{
             title: "ASUS RT-AC1200G+",
-            subtitle: "This router is support 2.45Ghz and 5Ghz",
+            subtitle: "support 2.45Ghz and 5Ghz",
             item_url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",               
             image_url: "http://35.220.204.174/WebProject/img/ASUS%20Dual-band%20Wireless-AC1200%20router%20RT-AC1200G+.jpg",
             buttons: [{
@@ -420,7 +420,7 @@ function sendManyProduct(recipientId) {
             }],
           }, {
             title: "D-Link COVR-3902",
-            subtitle: "This router is support 2.4Ghz and 5Ghz",
+            subtitle: "support 2.4Ghz and 5Ghz",
             item_url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",               
             image_url: "http://35.220.204.174/WebProject/img/D-Link%20COVR-3902%20AC3900%20COVR%20Wi-Fi%20System.jpg",
             buttons: [{
