@@ -409,8 +409,10 @@ function sendManyProduct(recipientId) {
         payload: {
           template_type: "generic",
           elements: [{
-            title: "ASUS RT-AC1200G+",
-            subtitle: "support 2.45Ghz and 5Ghz",
+            // title: "ASUS RT-AC1200G+",
+            // subtitle: "support 2.45Ghz and 5Ghz",
+            title: "ASUS Dual-band Wireless-AC1200 router RT-AC1200G+",
+            subtitle: "ASUS RT-AC1200G+ is Router/Access Point that use AC technology or 5Ghz 1167 Mbps, Gigabit one WAN interface,  and four 100/1000 Mbps LAN interface, four 5 dBi antenna (unremovable) support Wireless AC at 300 Mbps on 2.4GHz and 867 Mbps  on 5GHz, with Wireless Router mode and Access Point mode.",
             item_url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",               
             image_url: "http://35.220.204.174/WebProject/img/ASUS%20Dual-band%20Wireless-AC1200%20router%20RT-AC1200G+.jpg",
             buttons: [{
