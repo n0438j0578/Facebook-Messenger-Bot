@@ -338,31 +338,7 @@ function receivedMessage(event) {
       sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
       sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
         break;
-      // case 'cstu':
-      //   sendTextMessage(senderID, "วิทยาการคอมพิวเตอร์ที่เก่งที่สุดในประเทศไทย");
-      //   break;
-		
-      // case 'นักเดินเล่น':
-      //     sendTextMessage(senderID, test);
-      //     break;
-
-      // case 'ต่อ':
-      // var url = "mongodb://test:joenut1234@ds046677.mlab.com:46677/chatbot";
-
-      // mongo.MongoClient.connect(url, function(err, db) {
-      //   if (err) throw err;
-      //   var dbo = db.db("chatbot");
-      //   dbo.collection("word").findOne({}, function(err, result) {
-      //     if (err) throw err;
-      //     sendTextMessage(senderID, result.Hi[0]);
-      //     db.close();
-      //   });
-      // }); 
-      //     break;
-
-      case 'ASUS Dual-band Wireless-AC1200 router RT-AC1200G+ เหลือไหม':
-      sendTextMessage(senderID, "เหลืออยู่ 10 ชิ้นครับ");
-        break;
+     
 
       case 'เปลี่ยนป๊ะ':
       sendTextMessage(senderID, "เปลี่ยนแล้วจ้าาาา");
@@ -381,10 +357,25 @@ function receivedMessage(event) {
         } },
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
-              sendTextMessage(senderID, "มีของจ้ามาดูได้เลย");
-              var a="";
-              a +=body.Answer.Img;
-              sendImageMessagewithtext(senderID,a)
+              var check = "";
+              check = body.Answer.Type;
+              if(check.localeCompare("มีของไหม")==0){
+                sendTextMessage(senderID, "มีของจ้ามาดูได้เลย");
+                var a="";
+                a +=body.Answer.Img;
+                sendImageMessagewithtext(senderID,a)
+              }else if(check.localeCompare("เหลือไหม")==0){
+                var result = "";
+                result =body.Answer.Amount;
+                sendTextMessage(senderID, result);
+
+              }else{
+                var result = "";
+                result =body.Answer.Name;
+                sendTextMessage(senderID, result);
+
+              }
+
             }
         }
     );
