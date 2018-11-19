@@ -409,32 +409,24 @@ function sendManyProduct(recipientId) {
         payload: {
           template_type: "generic",
           elements: [{
-            title: "ASUS Dual-band Wireless-AC1200 router RT-AC1200G+",
-            subtitle: "This router is support 2.45Ghz and 5Ghz (dual band)",
+            title: "ASUS RT-AC1200G+",
+            subtitle: "This router is support 2.45Ghz and 5Ghz",
             item_url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",               
             image_url: "http://35.220.204.174/WebProject/img/ASUS%20Dual-band%20Wireless-AC1200%20router%20RT-AC1200G+.jpg",
             buttons: [{
               type: "web_url",
               url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",
               title: "เปิดหน้าเว็บสินค้า"
-            }, {
-              type: "postback",
-              title: "Call Postback",
-              payload: "Payload for first bubble",
             }],
           }, {
-            title: "D-Link COVR-3902 AC3900 COVR Wi-Fi System",
-            subtitle: "This router is support 2.4Ghz and 5Ghz (dual band)",
+            title: "D-Link COVR-3902",
+            subtitle: "This router is support 2.4Ghz and 5Ghz",
             item_url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",               
             image_url: "http://35.220.204.174/WebProject/img/D-Link%20COVR-3902%20AC3900%20COVR%20Wi-Fi%20System.jpg",
             buttons: [{
               type: "web_url",
               url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",
               title: "เปิดหน้าเว็บสินค้า"
-            }, {
-              type: "postback",
-              title: "Call Postback",
-              payload: "Payload for second bubble",
             }]
           }]
         }
