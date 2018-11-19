@@ -420,10 +420,6 @@ function sendManyProduct(recipientId) {
               // url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",
               url: "https://www.oculus.com/en-us/rift/",
               title: "เปิดหน้าเว็บสินค้า"
-            }, {
-              type: "postback",
-              title: "Call Postback",
-              payload: "Payload for second bubble",
             }],
           }, {
             title: "D-Link COVR-3902",
@@ -435,10 +431,6 @@ function sendManyProduct(recipientId) {
               // url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",
               url: "https://www.oculus.com/en-us/rift/",
               title: "เปิดหน้าเว็บสินค้า"
-            }, {
-              type: "postback",
-              title: "Call Postback",
-              payload: "Payload for second bubble",
             }]
           }]
         }
