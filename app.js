@@ -364,7 +364,7 @@ function receivedMessage(event) {
       sendTextMessage(senderID, "เหลืออยู่ 10 ชิ้นครับ");
         break;
 
-        case 'อยากได้เร้าเตอร์ที่รองรับระยะไกลๆ และมี 2.4 กับ 5 ครับ':
+      case 'อยากได้เร้าเตอร์ที่รองรับระยะไกลๆ และมี 2.4 กับ 5 ครับ':
         var messageData = {
           recipient: {
             id: senderID
@@ -383,6 +383,10 @@ function receivedMessage(event) {
                     type: "web_url",
                     url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",
                     title: "เปิดหน้าเว็บสินค้า"
+                  }, {
+                    type: "postback",
+                    title: "Call Postback",
+                    payload: "Payload for first bubble",
                   }],
                 }, {
                   title: "D-Link COVR-3902 AC3900 COVR Wi-Fi System",
@@ -393,6 +397,10 @@ function receivedMessage(event) {
                     type: "web_url",
                     url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",
                     title: "เปิดหน้าเว็บสินค้า"
+                  }, {
+                    type: "postback",
+                    title: "Call Postback",
+                    payload: "Payload for first bubble",
                   }]
                 }]
               }
