@@ -266,73 +266,78 @@ function receivedMessage(event) {
         sendImageMessage(senderID);
         break;
 
-      // case 'gif':
-      //   sendGifMessage(senderID);
-      //   break;
+      case 'gif':
+        sendGifMessage(senderID);
+        break;
 
-      // case 'audio':
-      //   sendAudioMessage(senderID);
-      //   break;
+      case 'audio':
+        sendAudioMessage(senderID);
+        break;
 
-      // case 'video':
-      //   sendVideoMessage(senderID);
-      //   break;
+      case 'video':
+        sendVideoMessage(senderID);
+        break;
 
-      // case 'file':
-      //   sendFileMessage(senderID);
-      //   break;
+      case 'file':
+        sendFileMessage(senderID);
+        break;
 
-      // case 'button':
-      //   sendButtonMessage(senderID);
-      //   break;
+      case 'button':
+        sendButtonMessage(senderID);
+        break;
 
-      // case 'generic':
-      //   sendGenericMessage(senderID);
-      //   break;
+      case 'generic':
+        sendGenericMessage(senderID);
+        break;
 
-      // case 'receipt':
-      //   sendReceiptMessage(senderID);
-      //   break;
+      case 'receipt':
+        sendReceiptMessage(senderID);
+        break;
 
-      // case 'quick reply':
-      //   sendQuickReply(senderID);
-      //   break;        
+      case 'quick reply':
+        sendQuickReply(senderID);
+        break;        
 
-      // case 'read receipt':
-      //   sendReadReceipt(senderID);
-      //   break;        
+      case 'read receipt':
+        sendReadReceipt(senderID);
+        break;        
 
-      // case 'typing on':
-      //   sendTypingOn(senderID);
-      //   break;        
+      case 'typing on':
+        sendTypingOn(senderID);
+        break;        
 
-      // case 'typing off':
-      //   sendTypingOff(senderID);
-      //   break;        
+      case 'typing off':
+        sendTypingOff(senderID);
+        break;        
 
-      // case 'account linking':
-      //   sendAccountLinking(senderID);
-      //   break;
+      case 'account linking':
+        sendAccountLinking(senderID);
+        break;
 
-      // case 'Hi':
-      //   sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Chatbot test");
-      //   break;
+      case 'Hi':
+        sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
+        sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
+        break;
 
-      // case 'Hello':
-      //   sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Chatbot test");
-      //   break;
+      case 'Hello':
+      sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
+      sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
+        break;
 
-      // case 'สวัสดี':
-      //   sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Chatbot test");
-      //   break;
+      case 'สวัสดี':
+      sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
+      sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
+        break;
 
-      // case 'หวัดดี':
-      //   sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Chatbot test");
-      //   break;
+      case 'หวัดดี':
+      sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
+      sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
+        break;
 
-      // case 'ดีจ้า':
-      //   sendTextMessage(senderID, "สวัสดีครับ ยินดีต้อนรับเข้าสู่เพจ Chatbot test");
-      //   break;
+      case 'ดีจ้า':
+      sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
+      sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
+        break;
       // case 'cstu':
       //   sendTextMessage(senderID, "วิทยาการคอมพิวเตอร์ที่เก่งที่สุดในประเทศไทย");
       //   break;
