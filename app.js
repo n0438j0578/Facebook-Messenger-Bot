@@ -454,8 +454,8 @@ function sendManyProduct(recipientId) {
         payload: {
           template_type: "generic",
           elements: [{
-            title: "rift",
-            subtitle: "Next-generation virtual reality",
+            title: "ASUS Dual-band Wireless",
+            subtitle: "ASUS RT-AC1200G+ is Router/Access Point that use AC",
             item_url: "https://www.oculus.com/en-us/rift/",               
             image_url: SERVER_URL + "/assets/rift.png",
             buttons: [{
