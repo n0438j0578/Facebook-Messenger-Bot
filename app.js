@@ -369,7 +369,8 @@ function receivedMessage(event) {
         break;
 
       case 'อยากได้เร้าเตอร์ที่รองรับระยะไกลๆ และมี 2.4 กับ 5 ครับ':
-      sendManyProduct(senderID);
+      sendTextMessage(senderID, "เทส");
+      //sendManyProduct(senderID);
         break;
 
 
