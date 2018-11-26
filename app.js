@@ -353,7 +353,6 @@ function receivedMessage(event) {
       request.post(
         'http://35.240.139.71:20000/api/word',
         { json: {
-            "idcustomer":senderID,
             "text" : messageText
         } },
         function (error, response, body) {
@@ -369,6 +368,12 @@ function receivedMessage(event) {
                 var result = "";
                 result =body.Answer.Amount;
                 sendTextMessage(senderID, result);
+
+              }else if(check.localeCompare("คำถามต่อเนื่อง")==0){
+                var result = "";
+                result =body.Answer.Name;
+                sendTextMessage(senderID, result);
+                sendTextMessage(senderID, "ขอบคุณค่ะ");
 
               }else{
                 var result = "";
