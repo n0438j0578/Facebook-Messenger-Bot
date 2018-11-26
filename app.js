@@ -353,6 +353,7 @@ function receivedMessage(event) {
       request.post(
         'http://35.240.139.71:20000/api/word',
         { json: {
+            "idcustomer":senderID,
             "text" : messageText
         } },
         function (error, response, body) {
