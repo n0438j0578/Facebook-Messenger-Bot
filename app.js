@@ -325,7 +325,7 @@ function receivedMessage(event) {
         break;
 
       case 'สวัสดี':
-      sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
+      sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลยจ้า");
       sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
         break;
 
