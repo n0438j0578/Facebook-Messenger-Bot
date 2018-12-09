@@ -328,6 +328,10 @@ function receivedMessage(event) {
       sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
       sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
         break;
+      case 'สวัสดีครับ':
+      sendTextMessage(senderID, "สวัสดีค่ะยินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
+      //sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
+        break;
 
       case 'หวัดดี':
       sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
@@ -342,6 +346,9 @@ function receivedMessage(event) {
 
       case 'เปลี่ยนป๊ะ':
       sendTextMessage(senderID, "เปลี่ยนแล้วจ้าาาา");
+        break;
+      case 'เร้าเตอร์รุ่น ASUS Dual-band Wireless-AC1200 router RT-AC1200G+ ใช้อินเตอร์เน็ตไม่ได้ขึ้นไฟดีครับแก้อย่างไรดี':
+      sendTextMessage(senderID, "ลูกค้าสามารถแก้ปัญหาได้เบื้องต้นโดยดูสายแลนว่าเสียบแน่นหรือไม่ หลังจากนั้นทำการปิดเครื่องและทำการเปิดใหม่ จากนั้นสังเกตุไฟว่ายังขึ้นสีแดงเหมือนเดิมหรือไม่");
         break;
 
       case 'อยากได้เร้าเตอร์ที่รองรับระยะไกลๆ และมี 2.4 กับ 5 ครับ':
