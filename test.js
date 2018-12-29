@@ -37,20 +37,20 @@
 
 // //เทสกรณีที่ไม่มีคำตอบ
 
-// var request = require('request');
-// request.post(
-//     'http://35.240.139.71:20000/api/word ',
-//     { json: {
-//         "text":"มีหน้าร้านไหม"
-//     } },
-//     function (error, response, body) {
-//         if (!error && response.statusCode == 200) {
-//             console.log(body)
+var request = require('request');
+request.post(
+    'http://35.240.139.71:20000/api/word ',
+    { json: {
+        "text":"มีหน้าร้านไหม"
+    } },
+    function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+            console.log(body)
 
-//             //console.log(body.Answer.Img)
-//         }
-//     }
-// );
+            //console.log(body.Answer.Img)
+        }
+    }
+);
 
 
 // //เทสกระบวนเตรียมคำและให้ผู้ใข้เลือกต่อว่าคำไหนไม่มีความจำเป็น
