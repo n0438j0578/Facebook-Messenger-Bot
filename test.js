@@ -39,7 +39,7 @@
 
 var request = require('request');
 request.post(
-    'http://35.240.139.71:20000/api/word ',
+    'http://35.198.240.228:20000/api/word ',
     { json: {
         "text":"มีหน้าร้านไหม"
     } },
