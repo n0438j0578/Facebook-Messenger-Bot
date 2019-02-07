@@ -266,94 +266,94 @@ function receivedMessage(event) {
         sendImageMessage(senderID);
         break;
 
-      case 'gif':
-        sendGifMessage(senderID);
-        break;
+      // case 'gif':
+      //   sendGifMessage(senderID);
+      //   break;
 
-      case 'audio':
-        sendAudioMessage(senderID);
-        break;
+      // case 'audio':
+      //   sendAudioMessage(senderID);
+      //   break;
 
-      case 'video':
-        sendVideoMessage(senderID);
-        break;
+      // case 'video':
+      //   sendVideoMessage(senderID);
+      //   break;
 
-      case 'file':
-        sendFileMessage(senderID);
-        break;
+      // case 'file':
+      //   sendFileMessage(senderID);
+      //   break;
 
-      case 'button':
-        sendButtonMessage(senderID);
-        break;
+      // case 'button':
+      //   sendButtonMessage(senderID);
+      //   break;
 
-      case 'generic':
-        sendGenericMessage(senderID);
-        break;
+      // case 'generic':
+      //   sendGenericMessage(senderID);
+      //   break;
 
-      case 'receipt':
-        sendReceiptMessage(senderID);
-        break;
+      // case 'receipt':
+      //   sendReceiptMessage(senderID);
+      //   break;
 
-      case 'quick reply':
-        sendQuickReply(senderID);
-        break;        
+      // case 'quick reply':
+      //   sendQuickReply(senderID);
+      //   break;        
 
-      case 'read receipt':
-        sendReadReceipt(senderID);
-        break;        
+      // case 'read receipt':
+      //   sendReadReceipt(senderID);
+      //   break;        
 
-      case 'typing on':
-        sendTypingOn(senderID);
-        break;        
+      // case 'typing on':
+      //   sendTypingOn(senderID);
+      //   break;        
 
-      case 'typing off':
-        sendTypingOff(senderID);
-        break;        
+      // case 'typing off':
+      //   sendTypingOff(senderID);
+      //   break;        
 
-      case 'account linking':
-        sendAccountLinking(senderID);
-        break;
+      // case 'account linking':
+      //   sendAccountLinking(senderID);
+      //   break;
 
-      case 'Hi':
-        sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
-        sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
-        break;
+      // case 'Hi':
+      //   sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
+      //   sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
+      //   break;
 
-      case 'Hello':
-      sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
-      sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
-        break;
+      // case 'Hello':
+      // sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
+      // sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
+      //   break;
 
-      case 'สวัสดี':
-      sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
-      sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
-        break;
-      case 'สวัสดีครับ':
-      sendTextMessage(senderID, "สวัสดีค่ะยินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
-      //sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
-        break;
+      // case 'สวัสดี':
+      // sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
+      // sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
+      //   break;
+      // case 'สวัสดีครับ':
+      // sendTextMessage(senderID, "สวัสดีค่ะยินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
+      // //sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
+      //   break;
 
-      case 'หวัดดี':
-      sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
-      sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
-        break;
+      // case 'หวัดดี':
+      // sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
+      // sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
+      //   break;
 
-      case 'ดีจ้า':
-      sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
-      sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
-        break;
+      // case 'ดีจ้า':
+      // sendTextMessage(senderID, "สวัสดีจ้ายินดีต้อนรับสู่ร้านของเรา ลูกค้าสามารถสอบถามสินค้าได้เลย");
+      // sendImageMessagewithtext(senderID,"http://westnash.org/files/2018/01/Welcome-To-Socioplanet.jpg");
+      //   break;
      
 
-      case 'เปลี่ยนป๊ะ':
-      sendTextMessage(senderID, "เปลี่ยนแล้วจ้าาาา");
-        break;
-      case 'เร้าเตอร์รุ่น ASUS Dual-band Wireless-AC1200 router RT-AC1200G+ ใช้อินเตอร์เน็ตไม่ได้ขึ้นไฟดีครับแก้อย่างไรดี':
-      sendTextMessage(senderID, "ลูกค้าสามารถแก้ปัญหาได้เบื้องต้นโดยดูสายแลนว่าเสียบแน่นหรือไม่ หลังจากนั้นทำการปิดเครื่องและทำการเปิดใหม่ จากนั้นสังเกตุไฟว่ายังขึ้นสีแดงเหมือนเดิมหรือไม่");
-        break;
+      // case 'เปลี่ยนป๊ะ':
+      // sendTextMessage(senderID, "เปลี่ยนแล้วจ้าาาา");
+      //   break;
+      // case 'เร้าเตอร์รุ่น ASUS Dual-band Wireless-AC1200 router RT-AC1200G+ ใช้อินเตอร์เน็ตไม่ได้ขึ้นไฟดีครับแก้อย่างไรดี':
+      // sendTextMessage(senderID, "ลูกค้าสามารถแก้ปัญหาได้เบื้องต้นโดยดูสายแลนว่าเสียบแน่นหรือไม่ หลังจากนั้นทำการปิดเครื่องและทำการเปิดใหม่ จากนั้นสังเกตุไฟว่ายังขึ้นสีแดงเหมือนเดิมหรือไม่");
+      //   break;
 
-      case 'อยากได้เร้าเตอร์ที่รองรับระยะไกลๆ และมี 2.4 กับ 5 ครับ':
-      sendManyProduct(senderID);
-        break;
+      // case 'อยากได้เร้าเตอร์ที่รองรับระยะไกลๆ และมี 2.4 กับ 5 ครับ':
+      // sendManyProduct(senderID);
+      //   break;
 
 
       default:
@@ -366,7 +366,8 @@ function receivedMessage(event) {
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
               var check = "";
-              check = body.Answer.Type;
+              check = body.Status;
+              //"Status": "failed",
               if(check.localeCompare("มีของไหม")==0){
                 sendTextMessage(senderID, "มีของจ้ามาดูได้เลย");
                 var a="";
@@ -383,11 +384,14 @@ function receivedMessage(event) {
                 sendTextMessage(senderID, result);
                 sendTextMessage(senderID, "ขอบคุณค่ะ");
 
-              }else{
+              }else if(check.localeCompare("failed")==0){
+                sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
+              }else if(check.localeCompare("success")==0){
                 var result = "";
-                result =body.Answer.Name;
+                result =body.Result;
                 sendTextMessage(senderID, result);
-
+              }else{
+                sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
               }
 
             }
