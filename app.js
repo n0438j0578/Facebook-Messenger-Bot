@@ -78,7 +78,7 @@ app.get('/test', function(req, res) {
   res.sendStatus(200);
 });
 
-app.get('/testpost', function(req, res) {
+app.post('/testpost', function(req, res) {
   //check.localeCompare("มีของไหม")==0
   ans = req.Message;
   id = req.Id;
