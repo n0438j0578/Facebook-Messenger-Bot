@@ -80,7 +80,8 @@ app.get('/test', function(req, res) {
 
 app.post('/testpost', function(req, res) {
   //check.localeCompare("มีของไหม")==0
-  console.log(req);
+  console.log(req.Message);
+  console.log(req.Id);
   ans = req.Message;
   id = req.Id;
   sendTextMessage(id, ans);
