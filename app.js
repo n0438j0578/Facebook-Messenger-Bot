@@ -74,6 +74,7 @@ app.get('/webhook', function(req, res) {
 });
 
 app.get('/test', function(req, res) {
+  res.json({"foo": "bar"});
   res.sendStatus(200);
 });
 
