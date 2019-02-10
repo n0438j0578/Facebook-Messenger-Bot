@@ -74,6 +74,7 @@ app.get('/webhook', function(req, res) {
 });
 
 app.get('/test', function(req, res) {
+  sendTextMessage(1868064243272013, "ฉันเกลียดวิทย์คอม");
   res.json({"foo": "bar"});
   res.sendStatus(200);
 });
