@@ -84,6 +84,17 @@ app.get('/test', function(req, res) {
   res.sendStatus(200);
 });
 
+app.get('/test/:id&:option', function(req, res) {
+  sendTextMessage(1868064243272013, "ฉันเกลียดวิทย์คอม");
+  var query = require('url').parse(req.url,true).query;
+  var id = query.id;
+  var option = query.option;
+  console.log(id);
+  console.log(option);
+  res.json({"foo": "bar"});
+  res.sendStatus(200);
+});
+
 app.post('/testpost', function(req, res) {
   //check.localeCompare("มีของไหม")==0
   console.log(req.Message);
