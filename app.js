@@ -438,6 +438,10 @@ function receivedMessage(event) {
                   }
               );
 
+              }else if(check.localeCompare("success search")==0){
+                 //ตรงนี้มึงก็เอาค่าจาก body ใช้อะ เดี๋ยวทำตัวอย่างให้ใน test
+                  
+                //sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
               }else{
                 sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
               }
