@@ -471,7 +471,7 @@ function sendManyProduct(recipientId, arr) {
       var tmp = {
           title: arr[i].Name,
           subtitle: arr[i].Des,
-          image_url: "http://35.220.204.174/WebProject"+arr[i].Img.substring(1, arr[i].Img.length)
+          image_url: "http://35.220.204.174/WebProject"+arr[i].Img.substring(1, arr[i].Img.length).replace(/\s/g, "%")
       }
       obj.push(tmp);              
   }
