@@ -440,7 +440,7 @@ function receivedMessage(event) {
 
               }else if(check.localeCompare("success search")==0){
                  //ตรงนี้มึงก็เอาค่าจาก body ใช้อะ เดี๋ยวทำตัวอย่างให้ใน test
-                  
+                sendManyProduct(senderID, body.Product)
                 //sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
               }else{
                 sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
@@ -459,7 +459,23 @@ function receivedMessage(event) {
 }
 
 
-function sendManyProduct(recipientId) {
+function sendManyProduct(recipientId, arr) {
+  
+  // var element = {}
+  // var key = 'elements';
+  // element[key] = [];
+  
+  var obj = [];
+
+  for (var i = 0; i < arr.length; i++) {
+      var tmp = {
+          title: arr[i].Name,
+          subtitle: arr[i].Des,
+          image_url: "http://35.220.204.174/WebProject"+arr[i].Img.substring(1, arr[i].Img.length)
+      }
+      obj.push(tmp);              
+  }
+
   var messageData = {
     recipient: {
       id: recipientId
@@ -469,31 +485,7 @@ function sendManyProduct(recipientId) {
         type: "template",
         payload: {
           template_type: "generic",
-          elements: [{
-            // title: "ASUS RT-AC1200G+",
-            // subtitle: "support 2.45Ghz and 5Ghz",
-            title: "ASUS Dual-band Wireless-AC1200 router RT-AC1200G+",
-            subtitle: "ASUS RT-AC1200G+ is Router/Access Point that use AC technology or 5Ghz 1167 Mbps, Gigabit one WAN interface,  and four 100/1000 Mbps LAN interface, four 5 dBi antenna (unremovable) support Wireless AC at 300 Mbps on 2.4GHz and 867 Mbps  on 5GHz, with Wireless Router mode and Access Point mode.",
-            item_url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",               
-            image_url: "http://35.220.204.174/WebProject/img/ASUS%20Dual-band%20Wireless-AC1200%20router%20RT-AC1200G+.jpg",
-            buttons: [{
-              type: "web_url",
-              // url: "http://35.220.204.174/WebProject/product_detail.php/?idq=41",
-              url: "https://www.oculus.com/en-us/rift/",
-              title: "เปิดหน้าเว็บสินค้า"
-            }],
-          }, {
-            title: "D-Link COVR-3902",
-            subtitle: "support 2.4Ghz and 5Ghz",
-            item_url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",               
-            image_url: "http://35.220.204.174/WebProject/img/D-Link%20COVR-3902%20AC3900%20COVR%20Wi-Fi%20System.jpg",
-            buttons: [{
-              type: "web_url",
-              // url: "http://35.220.204.174/WebProject/product_detail.php/?idq=49",
-              url: "https://www.oculus.com/en-us/rift/",
-              title: "เปิดหน้าเว็บสินค้า"
-            }]
-          }]
+          elements: obj
         }
       }
     }
