@@ -461,17 +461,13 @@ function receivedMessage(event) {
 
 function sendManyProduct(recipientId, arr) {
   
-  // var element = {}
-  // var key = 'elements';
-  // element[key] = [];
-  
   var obj = [];
 
   for (var i = 0; i < arr.length; i++) {
       var tmp = {
           title: arr[i].Name,
           subtitle: arr[i].Des,
-          image_url: "http://35.220.204.174/WebProject"+arr[i].Img.substring(1, arr[i].Img.length).replace(/\s/g, "%")
+          image_url: "http://35.220.204.174/WebProject"+arr[i].Img.substring(1, arr[i].Img.length).replace(/\s/g, "%20")
       }
       obj.push(tmp);              
   }
