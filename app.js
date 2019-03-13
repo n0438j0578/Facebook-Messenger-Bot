@@ -17,8 +17,8 @@ const
   crypto = require('crypto'),
   express = require('express'),
   https = require('https'),  
-  request = require('request');
-  cors = require('cors')
+  request = require('request'),
+  cors = require('cors');
 
 var app = express();
 app.use(cors())
