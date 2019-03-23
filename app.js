@@ -456,7 +456,7 @@ function receivedMessage(event) {
        // sendTextMessage(senderID, messageText);
     }
   } else if (messageAttachments) {
-    sendTextMessage(senderID, "Message with attachment received");
+    sendTextMessage(senderID, "😍");
   }
 }
 
