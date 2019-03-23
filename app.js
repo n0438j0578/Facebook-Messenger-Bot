@@ -396,7 +396,7 @@ function receivedMessage(event) {
 
       default:
       request.post(
-        'http://35.198.240.228:20000/api/wordcome',
+        'http://35.198.240.228:20000/api/wordcomecosine',
         { json: {
             "idcustomer":senderID,
             "text" : messageText
@@ -428,17 +428,17 @@ function receivedMessage(event) {
                 var result = "";
                 result =body.Result;
                 sendTextMessage(senderID, result);
-                request.post(
-                  'http://35.198.240.228:20000/api/test',
-                  { json: {
-                      "value":"senderID",
+              //   request.post(
+              //     'http://35.198.240.228:20000/api/test',
+              //     { json: {
+              //         "value":"senderID",
  
-                  } },
-                  function (error, response, body) {
-                      if (!error && response.statusCode == 200) {
-                      }
-                  }
-              );
+              //     } },
+              //     function (error, response, body) {
+              //         if (!error && response.statusCode == 200) {
+              //         }
+              //     }
+              // );
 
               }else if(check.localeCompare("success search")==0){
                  //ตรงนี้มึงก็เอาค่าจาก body ใช้อะ เดี๋ยวทำตัวอย่างให้ใน test

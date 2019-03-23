@@ -8,8 +8,7 @@ request.post(
     function (error, response, body) {
         if (!error && response.statusCode == 200) {
             console.log(body)
-            console.log(body.Product[0].Name)
-            //console.log(body.Answer.Img)
+            console.log(body.Status)
         }
     }
 );
