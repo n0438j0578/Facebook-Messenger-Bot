@@ -255,7 +255,7 @@ function receivedAuthentication(event) {
  * 
  */
 
-function receivedMessage(event) {
+async function receivedMessage(event) {
   var senderID = event.sender.id;
   var recipientID = event.recipient.id;
   var timeOfMessage = event.timestamp;
@@ -400,7 +400,7 @@ function receivedMessage(event) {
         { json: {
             "idcustomer":senderID,
             "text" : messageText
-        } },
+        } } ,
         async function (error, response, body) {
             if (!error && response.statusCode == 200) {
               var check = "";
