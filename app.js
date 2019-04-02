@@ -443,8 +443,7 @@ function receivedMessage(event) {
               }else if(check.localeCompare("success search")==0){
                  //ตรงนี้มึงก็เอาค่าจาก body ใช้อะ เดี๋ยวทำตัวอย่างให้ใน test
 
-                 var msg = "หากลูกค้าต้องการสั่งสินค้า กรุณาตอบกลับด้วยข้อความตามรูปแบบดังนี้ค่ะ\n<รหัสสินค้า>:<จำนวนสินค่าที่ต้องการ> เช่น 64:1"
-                sendManyProduct(senderID, body.Product, sendTextMessage(msg))
+                sendManyProduct(senderID, body.Product, sendTextMessage)
                 // var msg = "หากลูกค้าต้องการสั่งสินค้า กรุณาตอบกลับด้วยข้อความตามรูปแบบดังนี้ค่ะ\n<รหัสสินค้า>:<จำนวนสินค่าที่ต้องการ> เช่น 64:1"
                 // sendTextMessage(senderID, msg);
 
@@ -495,7 +494,9 @@ function sendManyProduct(recipientId, arr, callback) {
   };  
   callSendAPI(messageData);
 
-  callback();
+  
+  var msg = "หากลูกค้าต้องการสั่งสินค้า กรุณาตอบกลับด้วยข้อความตามรูปแบบดังนี้ค่ะ\n<รหัสสินค้า>:<จำนวนสินค่าที่ต้องการ> เช่น 64:1"
+  callback(msg);
 }
 
 
