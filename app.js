@@ -401,7 +401,7 @@ function receivedMessage(event) {
             "idcustomer":senderID,
             "text" : messageText
         } },
-        function (error, response, body) {
+        async function (error, response, body) {
             if (!error && response.statusCode == 200) {
               var check = "";
               check = body.Status;
@@ -443,9 +443,9 @@ function receivedMessage(event) {
               }else if(check.localeCompare("success search")==0){
                  //ตรงนี้มึงก็เอาค่าจาก body ใช้อะ เดี๋ยวทำตัวอย่างให้ใน test
 
-                sendManyProduct(senderID, body.Product)
+                await  sendManyProduct(senderID, body.Product)
                 var msg = "หากลูกค้าต้องการสั่งสินค้า กรุณาตอบกลับด้วยข้อความตามรูปแบบดังนี้ค่ะ\n<รหัสสินค้า>:<จำนวนสินค่าที่ต้องการ> เช่น 64:1"
-                await sendTextMessage(senderID, msg);
+                sendTextMessage(senderID, msg);
 
                 //sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
               }else{
@@ -465,7 +465,7 @@ function receivedMessage(event) {
 }
 
 
-async function sendManyProduct(recipientId, arr) {
+function sendManyProduct(recipientId, arr) {
   
   var obj = [];
 
