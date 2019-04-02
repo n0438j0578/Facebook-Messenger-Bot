@@ -443,8 +443,8 @@ function receivedMessage(event) {
               }else if(check.localeCompare("success search")==0){
                  //ตรงนี้มึงก็เอาค่าจาก body ใช้อะ เดี๋ยวทำตัวอย่างให้ใน test
 
-                await  sendManyProduct(senderID, body.Product)
-                var msg = "หากลูกค้าต้องการสั่งสินค้า กรุณาตอบกลับด้วยข้อความตามรูปแบบดังนี้ค่ะ\n<รหัสสินค้า>:<จำนวนสินค่าที่ต้องการ> เช่น 64:1"
+                const msg = await sendManyProduct(senderID, body.Product)
+                // var msg = 
                 sendTextMessage(senderID, msg);
 
                 //sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
@@ -493,6 +493,7 @@ function sendManyProduct(recipientId, arr) {
     }
   };  
   callSendAPI(messageData);
+  return "หากลูกค้าต้องการสั่งสินค้า กรุณาตอบกลับด้วยข้อความตามรูปแบบดังนี้ค่ะ\n<รหัสสินค้า>:<จำนวนสินค่าที่ต้องการ> เช่น 64:1";
 }
 
 
