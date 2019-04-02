@@ -492,7 +492,7 @@ function sendManyProduct(recipientId, arr) {
   callSendAPI(messageData);
 
   var msg = "หากลูกค้าต้องการสั่งสินค้า กรุณาตอบกลับด้วยข้อความตามรูปแบบดังนี้ค่ะ\n<รหัสสินค้า>:<จำนวนสินค่าที่ต้องการ> เช่น 64:1"
-  sendTextMessage(senderID, result);
+  sendTextMessage(senderID, msg);
 }
 
 
