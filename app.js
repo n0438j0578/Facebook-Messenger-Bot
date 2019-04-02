@@ -255,7 +255,7 @@ function receivedAuthentication(event) {
  * 
  */
 
-async function receivedMessage(event) {
+function receivedMessage(event) {
   var senderID = event.sender.id;
   var recipientID = event.recipient.id;
   var timeOfMessage = event.timestamp;
