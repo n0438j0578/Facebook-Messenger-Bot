@@ -446,6 +446,7 @@ function receivedMessage(event) {
                 const msg = await sendManyProduct(senderID, body.Product)
                 // var msg = 
                 sendTextMessage(senderID, msg);
+                sendImageMessage(senderID);
 
                 //sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
               }else{
@@ -620,7 +621,8 @@ function sendImageMessage(recipientId) {
       attachment: {
         type: "image",
         payload: {
-          url: SERVER_URL + "/assets/rift.png"
+          // url: SERVER_URL + "/assets/rift.png"
+          url: "http://35.220.204.174/WebProject/bank/bank_pic.jpg"
         }
       }
     }
