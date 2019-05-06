@@ -472,7 +472,7 @@ function sendManyProduct(recipientId, arr) {
 
   for (var i = 0; i < arr.length; i++) {
       var tmp = {
-          title: "รหัสสินค้า : "+arr[i].ID+"                      "+"ชื่อสินค้า :"+arr[i].Name,
+          title: "รหัสสินค้า : "+arr[i].ID+"                                   "+"ชื่อสินค้า :"+arr[i].Name,
           subtitle: arr[i].Des,
           image_url: "http://35.220.204.174/WebProject"+arr[i].Img.substring(1, arr[i].Img.length).replace(/\s/g, "%20")
       }
