@@ -449,7 +449,11 @@ function receivedMessage(event) {
                 sendImageMessage(senderID);
 
                 //sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
-              }else{
+              }else if(check.localeCompare("success bank")==0){
+               sendImageMessage(senderID);
+
+               //sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
+             }else{
                 sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
               }
 
