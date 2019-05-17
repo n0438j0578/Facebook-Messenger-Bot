@@ -478,7 +478,7 @@ function sendManyProduct(recipientId, arr) {
       var tmp = {
           title: "รหัสสินค้า : "+arr[i].ID+" "+"ชื่อสินค้า :"+arr[i].Name,
           subtitle: arr[i].Des,
-          image_url: "http://35.220.204.174/"+arr[i].Img.substring(1, arr[i].Img.length).replace(/\s/g, "%20")
+          image_url: "https://nj.nn-space.me/"+arr[i].Img.substring(1, arr[i].Img.length).replace(/\s/g, "%20")
       }
       obj.push(tmp);              
   }
@@ -626,7 +626,7 @@ function sendImageMessage(recipientId) {
         type: "image",
         payload: {
           // url: SERVER_URL + "/assets/rift.png"
-          url: "http://35.220.204.174/WebProject/bank/bank_pic.jpg"
+          url: "https://nj.nn-space.me/WebProject/bank/bank_pic.jpg"
         }
       }
     }
