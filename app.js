@@ -478,7 +478,7 @@ function sendManyProduct(recipientId, arr) {
       var tmp = {
           title: "รหัสสินค้า : "+arr[i].ID+" "+"ชื่อสินค้า :"+arr[i].Name,
           subtitle: arr[i].Des,
-          image_url: "https://nj.nn-space.me/"+arr[i].Img.substring(1, arr[i].Img.length).replace(/\s/g, "%20")
+          image_url: "https://nj.nn-space.me/WebProject"+arr[i].Img.substring(1, arr[i].Img.length).replace(/\s/g, "%20")
       }
       obj.push(tmp);              
   }
