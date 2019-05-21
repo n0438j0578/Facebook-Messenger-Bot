@@ -441,19 +441,24 @@ function receivedMessage(event) {
               // );
 
               }else if(check.localeCompare("success search")==0){
-                 //ตรงนี้มึงก็เอาค่าจาก body ใช้อะ เดี๋ยวทำตัวอย่างให้ใน test
+                //ตรงนี้มึงก็เอาค่าจาก body ใช้อะ เดี๋ยวทำตัวอย่างให้ใน test
 
-                const msg = await sendManyProduct(senderID, body.Product)
-                // var msg = 
-                sendTextMessage(senderID, msg);
-                sendImageMessage(senderID);
-
-                //sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
-              }else if(check.localeCompare("success bank")==0){
-               sendImageMessage(senderID);
+               const msg = await sendManyProduct(senderID, body.Product)
+               // var msg = 
+               sendTextMessage(senderID, msg);
 
                //sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
-             }else{
+             }else if(check.localeCompare("success bank")==0){
+              sendImageMessage(senderID);
+
+              //sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
+            }else if(check.localeCompare("success bill")==0){
+             result =body.Result;
+             sendTextMessage(senderID, result);
+             await sendImageMessage(senderID);
+
+             //sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
+           }else{
                 sendTextMessage(senderID, "จะทำการตรวจสอบให้นะคะ");
               }
 
