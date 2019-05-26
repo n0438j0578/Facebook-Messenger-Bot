@@ -487,6 +487,7 @@ function sendManyProduct(recipientId, arr) {
       }
       obj.push(tmp);              
   }
+  //
 
   var messageData = {
     recipient: {
