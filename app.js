@@ -497,16 +497,7 @@ function sendManyProduct(recipientId, arr) {
         type: "template",
         payload: {
           template_type: "generic",
-          elements: obj,
-          buttons: [{
-            type: "web_url",
-            url: "https://www.oculus.com/en-us/rift/",
-            title: "Open Web URL"
-          }, {
-            type: "postback",
-            title: "Call Postback",
-            payload: "Payload for first bubble",
-          }]
+          elements: obj
         }
       }
     }
