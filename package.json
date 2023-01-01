@@ -18,7 +18,7 @@
     "Math": "0.0.1-security",
     "biguint-format": "^1.0.0",
     "body-parser": "^1.15.0",
-    "config": "^1.20.4",
+    "config": "^3.3.8",
     "cors": "^2.8.5",
     "ejs": "^2.4.2",
     "express": "^4.13.4",
